@@ -15,7 +15,7 @@ def publish
   ...
 end
 ```
-When I am trying to write unit test `send_notification`
+When I am trying to write unit test for `send_notification`
 ```ruby
 # spec/rails_helper.rb
  RSpec.configure do |config|
@@ -29,6 +29,7 @@ When I am trying to write unit test `send_notification`
    it 'enqueues the job' do
      get :publish
    end
+ end
 ```
 I am getting following error
 ```ruby
